@@ -1,0 +1,17 @@
+# File Organization Tool Dependencies
+# 
+# This project uses only built-in Python libraries for maximum compatibility.
+# However, if you want to build standalone executables, you'll need:
+
+# For building executable files:
+# pyinstaller>=5.0
+
+# For development and testing:
+# pytest>=7.0
+# pytest-cov>=4.0
+
+# For code formatting and linting:
+# black>=22.0
+# flake8>=5.0
+
+# Note: tkinter comes built-in with Python, so no additional GUI dependencies needed!
