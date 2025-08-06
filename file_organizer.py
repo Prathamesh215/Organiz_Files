@@ -7,6 +7,7 @@ from pathlib import Path
 import threading
 import time
 from datetime import datetime
+
 class fileOrganizarApp:
     def __init__(self):
         self.root=tk.Tk()
@@ -48,4 +49,89 @@ class fileOrganizarApp:
         self.progress_var=tk.DoubleVar()
 
     def setup_file_catagories(self):
+        self.file_categories = {
+            '📸 Images': [
+                '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', 
+                '.webp', '.svg', '.ico', '.raw'
+            ],
+            '📄 Documents': [
+                '.pdf', '.doc', '.docx', '.txt', '.rtf', '.odt',
+                '.xls', '.xlsx', '.ppt', '.pptx', '.csv'
+            ],
+            '🎬 Videos': [
+                '.mp4', '.avi', '.mkv', '.mov', '.wmv', '.flv',
+                '.webm', '.m4v', '.3gp'
+            ],
+            '🎵 Audio': [
+                '.mp3', '.wav', '.flac', '.aac', '.ogg', '.wma',
+                '.m4a', '.opus'
+            ],
+            '📦 Archives': [
+                '.zip', '.rar', '.7z', '.tar', '.gz', '.bz2',
+                '.xz', '.tar.gz', '.tar.bz2'
+            ],
+            '💻 Code': [
+                '.py', '.js', '.html', '.css', '.java', '.cpp',
+                '.c', '.php', '.rb', '.go', '.rs', '.swift'
+            ],
+            '⚙️ Programs': [
+                '.exe', '.msi', '.deb', '.rpm', '.dmg', '.pkg',
+                '.app', '.apk'
+            ],
+            '📋 Spreadsheets': [
+                '.xls', '.xlsx', '.csv', '.ods'
+            ],
+            '🗂️ Others': []  # Catch-all category
+        }
 
+    def create_modern_ui(self):
+        self.setup_styles()
+        self.create_header()
+        self.create_main_content()
+        self.create_footer()
+
+    def setup_styles(self):
+        style=ttk.style()
+        style.theme_use('clam')
+
+        style.configure(
+            'Modern.TButton',
+            font=('Segon UI',11,'bold'),
+            foreground='white',
+            background="#16647e"
+            borderwidth=0,
+            focuscolor='none'
+        )
+
+        style.map(
+            'Modern.TButton',
+            background=[('active','#1e6091')]
+        )
+
+        style.configure(
+            'Modern.Horizontal.TProgressbar',
+            background='#16537e'
+            troughcolor='#2d2d44',
+            borderwidth=0,
+            lightcolor='#16537e',
+            darkcolor='#16537e'
+        )
+
+
+    def create_header(self):
+
+
+    def create_main_content(self):
+
+
+    def create_footer(self):
+
+
+
+def main():
+    """Entry point for the application"""
+    app = fileOrganizarApp()
+    app.run()
+
+if __name__ == "__main__":
+    main()
