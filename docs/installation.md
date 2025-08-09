@@ -49,7 +49,7 @@ This guide will help you install and set up the File Organization Tool on your s
 
  **Build the executable with your custom icon:**
 
- **On Windows:**
+# On Windows:
 -    **Terminal:**
 -                    pyinstaller --onefile -w --icon=logo-image.ico file_organizer.py
 
