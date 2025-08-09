@@ -38,13 +38,13 @@ This guide will help you install and set up the File Organization Tool on your s
 # Optional: Running as an Installed Package
  **If you have installed the package locally using setup.py, you can run the GUI via the command line:**
 
- **Terminal:**
--           file-organizer-gui
+-   **Terminal:**
+-                 file-organizer-gui
 
  **Optional: Build Standalone Executable (Windows, Linux, macOS)**
  **Install PyInstaller if not already installed:**
 
--    **Terminal:**
+-   **Terminal:**
 -                  pip install pyinstaller
 
  **Build the executable with your custom icon:**
