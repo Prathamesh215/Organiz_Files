@@ -17,7 +17,7 @@ class FileOrganizerApp:
         self.create_modern_ui()
 
     def setup_window(self):
-        self.root.title("Organiz File")
+        self.root.title("Organize File")
         self.root.geometry("700x500")
         self.root.configure(bg='#1a1a2e')
         self.root.resizable(True, False)

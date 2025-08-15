@@ -9,7 +9,7 @@ def read_readme():
     return "A modern file organization tool built with Python and tkinter."
 
 setup(
-    name="organiz-file",
+    name="organize_file",
     version="2.0.0",
     author="Your Name",
     author_email="your.email@example.com",
