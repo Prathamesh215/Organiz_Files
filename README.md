@@ -1,4 +1,4 @@
-# 🗂️ File Organization Tool
+# 🗂️ Organization file
 
 A beautiful, modern Python desktop application that automatically organizes your files by type. Transform chaotic folders into perfectly organized directories with just one click!
 
