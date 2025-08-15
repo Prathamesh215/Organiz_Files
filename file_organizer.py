@@ -17,15 +17,15 @@ class FileOrganizerApp:
         self.create_modern_ui()
 
     def setup_window(self):
-        self.root.title("File Organizer - Make Your Folders Beautiful")
-        self.root.geometry("600x500")
+        self.root.title("Organiz File")
+        self.root.geometry("700x500")
         self.root.configure(bg='#1a1a2e')
         self.root.resizable(True, False)
         self.center_window()
         # Robust, cross-platform icon loading
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        ico_path = os.path.join(script_dir, 'logo-image.ico')
-        png_path = os.path.join(script_dir, 'logo-image.png')
+        ico_path = os.path.join(script_dir, 'logo/logo-image.ico')
+        png_path = os.path.join(script_dir, 'logo/logo-image.png')
         if sys.platform.startswith('win'):
             try:
                 self.root.iconbitmap(ico_path)

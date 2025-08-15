@@ -9,14 +9,14 @@ def read_readme():
     return "A modern file organization tool built with Python and tkinter."
 
 setup(
-    name="file-organization-tool",
+    name="organiz-file",
     version="2.0.0",
     author="Your Name",
     author_email="your.email@example.com",
     description="A modern Python GUI application for automatic file organization",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/file-organization-tool",
+    url="https://github.com/yourusername/organiz_file",
     packages=find_packages(),
     py_modules=["file_organizer"],
     python_requires=">=3.7",
